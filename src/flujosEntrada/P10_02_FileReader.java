@@ -1,5 +1,6 @@
 
 package flujosEntrada;
+
 import java.io.FileReader;
 import java.io.IOException;
 /**
@@ -14,7 +15,8 @@ public class P10_02_FileReader {
 
         try {
             //fichero.txt debe estar en la carpeta del proyecto (si no poner ruta completa):
-            in = new FileReader("C:\\Users\\jvega\\Downloads\\ficheros.txt");
+//            in = new FileReader("C:\\Users\\jvega\\Downloads\\ficheros.txt");
+            in = new FileReader("C:\\Users\\jvega\\Documents\\NetBeansProjects\\10_ficherosTexto\\carta.txt");
             int c = in.read();
             while (c != -1) { 
                 texto = texto + (char) c; 

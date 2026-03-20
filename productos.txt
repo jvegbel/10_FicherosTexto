@@ -1,0 +1,5 @@
+101;Monitor Gaming;189.99;true
+102;Teclado Mecanico;55.50;true
+103;Raton Optico;25.00;false
+104;Auriculares 7.1;79.95;true
+105;Alfombrilla XL;15.25;true

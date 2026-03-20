@@ -12,7 +12,7 @@ public class P10_03_FicheroNumerosReales {
      public static void main(String[] args) {
         BufferedReader in = null;
         try {
-            in = new BufferedReader(new FileReader("C:\\Users\\jvega\\Downloads\\NumerosReales.txt"));
+            in = new BufferedReader(new FileReader("NumerosReales.txt"));
             String texto = in.readLine();
             String[] subcadenas = texto.split(" ");
             double suma = 0;

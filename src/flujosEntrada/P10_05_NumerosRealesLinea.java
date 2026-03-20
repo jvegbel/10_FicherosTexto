@@ -1,5 +1,6 @@
 
 package flujosEntrada;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,19 +9,27 @@ import java.io.IOException;
  *
  * @author jvega
  */
-public class P10_03_BufferedReader {
+public class P10_05_NumerosRealesLinea {
 
-   public static void main(String[] args) {
-        String texto = "";
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int contador = 0;
+        double media = 0;
         BufferedReader in = null;
         try {
-//            in = new BufferedReader(new FileReader("C:\\Users\\jvega\\Downloads\\fichero.txt"));
-            in = new BufferedReader(new FileReader("carta.txt"));
+            in = new BufferedReader(new FileReader("NumerosRealesLineas.txt"));
             String linea = in.readLine();
-            while (linea != null) { //mientras no llegue al final del archivo
-                texto = texto + linea + '\n';
+            while (linea != null) {
+                contador++;
+                System.out.println(linea);
+                media +=  Double.valueOf(linea);
                 linea = in.readLine();
             }
+           
+            System.out.println("Suma = " + media);
+            System.out.println("Media = " + media/contador);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         } finally {
@@ -33,8 +42,8 @@ public class P10_03_BufferedReader {
             }
         }
         
-        System.out.println("Prueba carácteres");
-        System.out.println(texto);
+        
+
     }
     
 }

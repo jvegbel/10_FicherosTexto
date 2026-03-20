@@ -1,4 +1,4 @@
-package scannerEntrada;
+package flujosEntrada;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Propuesta1003 {
+public class DatosJugadores {
 
     public static void main(String[] args) {
         BufferedReader entrada = null;
